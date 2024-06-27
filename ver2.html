@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Terminal</title>
+    <link rel="stylesheet" href="ver2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div id="input-container">
+                <div id="display"></div>
+            </div>
+        </div>
+        <div class="code-intput">
+            <input type="text" id="user-input" placeholder="Type here...">
+        </div>
+        <div class="editor">
+            <div class="editor-heading">
+                <div class="heading">
+                    Text Editor
+                </div>
+                <div class="opened-info" id="op-info">
+                    Currently Opened:
+                </div>
+                <div class="what-open" id="op">
+                    Nothing
+                </div>
+            </div>
+            <div class="editor-input">
+                <textarea class="t2" type="text" id="editor-user-input" disabled=true></textarea>
+            </div>
+            <button onclick="clickFunction()">Save</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="ver2.js"></script>
+</body>
+
+</html>
